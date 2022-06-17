@@ -43,4 +43,14 @@ public class BinarySearchTest {
         int result = BinarySearch.search(arr, target);
         assertEquals(expResult, result);
     }
+    
+    @Test
+    public void testArrayNotOrdered() {
+        System.out.println("ArrayNotOrdered");
+        int[] arr = {1, 4, 3, 7, 5, 2, 0, 6, 9, 10};
+        int target = 7;
+        int expResult = -2;
+        int result = BinarySearch.search(arr, target);
+        assertEquals(expResult, result);
+    }
 }
